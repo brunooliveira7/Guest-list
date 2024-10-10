@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121214;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8234e9;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -77,6 +89,9 @@ button {
 ul {
   list-style-type: none;
   margin-top: 42px;
+
+  overflow-y: scroll;
+  max-height: 250px;
 }
 
 .guest {
