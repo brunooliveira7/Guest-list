@@ -111,6 +111,12 @@ ul {
   justify-content: space-between;
 }
 
+img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
 @media (max-width: 420px) {
   form {
     flex-direction: column;

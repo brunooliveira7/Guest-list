@@ -22,8 +22,20 @@ function addGuestToList(guestName) {
   const guestSpan = document.createElement("span");
   guestSpan.textContent = guestName;
 
+  const removeGuest = document.createElement("img");
+  removeGuest.setAttribute("src", "asset/remove.svg");
+
   listItem.appendChild(guestSpan);
+  listItem.appendChild(removeGuest);
   guestListElement.appendChild(listItem);
+}
+
+function removeGuestFromList(event) {
+  if (event.target.tagName === "IMG") {
+    if (confirm("Deseja remover este convidado?")) {
+      event.target.parentElement.remove();
+    }
+  }
 }
 
 // Manipulador de envio do formulário
@@ -50,3 +62,4 @@ function handleFormSubmit(event) {
 
 // Adicionar event listeners
 formElement.addEventListener("submit", handleFormSubmit);
+guestListElement.addEventListener("click", removeGuestFromList);
