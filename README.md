@@ -26,7 +26,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O usuário pode remover dinamicamente itens da lista, com o total atualizado após cada exclusão.
+Ideal para aniversários, casamentos e reuniões.
 
 ## :memo: Licença
 
